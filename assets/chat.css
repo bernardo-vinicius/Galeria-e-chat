@@ -1,0 +1,67 @@
+* {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  display: grid; 
+  grid-template-rows: 100px 1fr 50px;
+  height: 100vh;
+}
+
+header {
+  align-items: center;
+  background-color: #0d80bf;
+  color: white;
+  display: flex;
+  padding: 0 20px;
+}
+
+main .msg {
+  background-color: #e5050f;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin: 10px;
+  max-width: 50%;
+  padding: 10px;
+  justify-self: left;
+}
+
+main .msg .hora {
+  font-style: italic;
+  margin: .5rem 0 0 0;
+  padding: .5rem 0 0 0;
+  text-align: right;
+}
+
+main .msg.dono {
+  background-color: #007bff;
+  color: rgb(0, 0, 0);
+  justify-self: right;
+}
+
+footer {
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+footer input[type=text] {
+  background-color: #1f1a17;
+  border: #007bff;
+  color: #abaaaa;
+}
+
+footer button {
+  background-color: #f8c300;
+  border: 3px solid #1f1a17;
+  color: #93754f;
+}
